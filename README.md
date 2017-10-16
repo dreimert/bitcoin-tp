@@ -25,3 +25,7 @@ Du coup, vous pouvez suivre la première version de ce TP jusqu'à la question 1
 ### Créer une image à partir d'un container
 
     docker commit <CONTAINER ID ou container name> bash
+
+### Obtenir l'ip d'un container
+
+    docker inspect <CONTAINER ID ou container name> | grep IPAddress
