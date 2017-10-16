@@ -10,7 +10,7 @@
 ### Lancer un terminal supplèmentaire
 
     docker ps
-    docker exec -it <CONTAINER ID ou container name>
+    docker exec -it <CONTAINER ID ou container name> bash
 
 ## Vous êtes dans le conteneur
 
