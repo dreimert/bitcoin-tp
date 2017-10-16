@@ -19,6 +19,9 @@ RUN apt-get update && apt-get install -y \
     libboost-all-dev \
     libevent-dev \
     libssl-dev \
+    nano \
+    vim \
+    emacs \
  && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /root/
