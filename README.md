@@ -1,9 +1,16 @@
 # TP Bitcoin
 
-## Créer et lancer le conteneur
+## Docker
+
+### Créer et lancer le conteneur
 
     docker create -it --name mybitcoin  dreimert/bitcoin-tp bash
     docker start -ai mybitcoin
+    
+### Lancer un terminal supplèmentaire
+
+    docker ps
+    docker exec -it <CONTAINER ID ou container name>
 
 ## Vous êtes dans le conteneur
 
