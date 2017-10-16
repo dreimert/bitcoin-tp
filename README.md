@@ -11,6 +11,10 @@
 
     docker ps
     docker exec -it <CONTAINER ID ou container name> bash
+    
+### Mettre à jour l'image
+
+    docker pull dreimert/bitcoin-tp
 
 ## Vous êtes dans le conteneur
 
