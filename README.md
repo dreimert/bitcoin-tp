@@ -2,8 +2,9 @@
 
 ## Docker
 
-### Créer et lancer le conteneur
+### Télécharger, créer et lancer le conteneur
 
+    docker pull dreimert/bitcoin-tp
     docker create -it --name mybitcoin  dreimert/bitcoin-tp bash
     docker start -ai mybitcoin
     
