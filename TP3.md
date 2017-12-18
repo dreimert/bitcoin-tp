@@ -23,6 +23,11 @@ Si on veut utiliser notre propre blockchain, il faut manipuler les sources du sy
 
 Ouvrez et parcourez rapidement ce fichier.
 
+Le code suivant permet d'écrire dans la console en c++ :
+
+    #include <iostream>
+    std::cout << strMytestString;
+
 #### Q6 : Ajouter une trace quelconque dans le fichier pour vérifier que vos modifications sont bien prises en compte. Recompilez et exectuez le demon.
 
 #### Q7 : Tester la fonction de minage avec l'appel CLI : setgenerate true
