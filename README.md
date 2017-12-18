@@ -2,8 +2,9 @@
 
 ## Docker
 
-### Créer et lancer le conteneur
+### Télécharger, créer et lancer le conteneur
 
+    docker pull dreimert/bitcoin-tp
     docker create -it --name mybitcoin  dreimert/bitcoin-tp bash
     docker start -ai mybitcoin
     
@@ -19,3 +20,13 @@
 ## Vous êtes dans le conteneur
 
 Du coup, vous pouvez suivre la première version de ce TP jusqu'à la question 17 : https://sfrenot.jumplyn.com/tp3-minage-bitcoin/
+
+## Docker le retour
+
+### Créer une image à partir d'un container
+
+    docker commit <CONTAINER ID ou container name> bash
+
+### Obtenir l'ip d'un container
+
+    docker inspect <CONTAINER ID ou container name> | grep IPAddress
