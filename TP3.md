@@ -28,7 +28,9 @@ Ouvrez et parcourez rapidement ce fichier.
 Le code suivant permet d'écrire dans la console en c++ :
 
     #include <iostream>
-    std::cout << strMytestString;
+
+    /* Dans une fonction bien choisie */
+    std::cout << "Mon super commentaire à afficher";
 
 #### Q6 : Ajouter une trace quelconque dans le fichier pour vérifier que vos modifications sont bien prises en compte. Recompilez et exectuez le demon.
 
