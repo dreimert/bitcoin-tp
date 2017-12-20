@@ -19,7 +19,7 @@ Une fois la version récupérée vous devez (re)compiler vos outils. Il faudra c
 
 #### Q4 : Où est la documentation pour compiler bitcoin ? Utiliser les commandes `ls` et `cat` pour trouver l'enplacement de la documentation.
 
-Une fois la compilation lancée, continuer la lecture de ce TP pendant la compilation.
+Une fois la compilation lancée, continuer la lecture de ce TP pendant la compilation. Pour information, les exécutables sont, une fois la compilation terminée dans `./src/`.
 
 Si on veut utiliser notre propre blockchain, il faut manipuler les sources du système. La configuration de la blockchain se situe dans le fichier src/chainparams.cpp.
 
