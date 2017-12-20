@@ -17,9 +17,9 @@ La dernière version à supporter le minage est la v0.12.0.
 
 Une fois la version récupérée vous devez (re)compiler vos outils. Il faudra certainement (re)passer par une phase de reconfiguration.
 
-#### Q4 : Où est la documentation pour compiler bitcoin ?
+#### Q4 : Où est la documentation pour compiler bitcoin ? Utiliser les commandes `ls` et `cat` pour trouver l'enplacement de la documentation.
 
-#### Q5 :  D'un point de vue minage que se passe t'il au lancement du démon ?
+Une fois la compilation lancée, continuer la lecture de ce TP pendant la compilation.
 
 Si on veut utiliser notre propre blockchain, il faut manipuler les sources du système. La configuration de la blockchain se situe dans le fichier src/chainparams.cpp.
 
@@ -29,46 +29,45 @@ Le code suivant permet d'écrire dans la console en c++ :
 
     #include <iostream>
 
-    /* Dans une fonction bien choisie */
+    /* Dans la fonction Params */
     std::cout << "Mon super commentaire à afficher";
 
-#### Q6 : Ajouter une trace quelconque dans le fichier pour vérifier que vos modifications sont bien prises en compte. Recompilez et exectuez le demon.
+#### Q5 : Ajouter une trace quelconque dans le fichier pour vérifier que vos modifications sont bien prises en compte. Recompilez et exectuez le demon.
 
-#### Q7 : Tester la fonction de minage avec l'appel CLI : setgenerate true
+La fonction de minage avec l'appel CLI : setgenerate true permet de lancer le minage.
 
-Modification des paramètres de lancement
 La première étape est de ne plus se connecter au réseau Bitcoin.
 
-#### Q8 : Quel mode permet de lancer bitcoind sans qu'il se connecte à d'autres noeuds noeuds ?
+#### Q6 : Quel mode permet de lancer bitcoind sans qu'il se connecte à d'autres noeuds noeuds ?
 
-#### Q9 : La configuration de ce paramètre est dans le fichier src/chainparams.cpp. Que fait-il avec les seeds du réseau ? (Qu'est ce qu'un seed dans un réseau ?)
+#### Q7 : La configuration de ce paramètre est dans le fichier src/chainparams.cpp. Que fait-il avec les seeds du réseau ? (Qu'est ce qu'un seed dans un réseau ?)
 
-#### Q10 : La configuration du réseau principal est aussi définis dans src/chainparams.cpp. Quels sont les seeds proposés ?
+#### Q8 : La configuration du réseau principal est aussi définis dans src/chainparams.cpp. Quels sont les seeds proposés ?
 
 Faite en sorte que la chaîne principale ne se connecte plus au réseau Bitcoin.
 
 Arrêtez, recompiler, nettoyer votre dossier de configuration et relancer le demon.
 Par la suite, quand on parle de relancer, on s'attend à ce que vous fassiez les actions de la phrase précédente.
 
-#### Q11 : Que ce passe t'il ? Pouvez vous désactiver cette tâche répétitive ?
+#### Q9 : Que ce passe t'il ? Pouvez vous désactiver cette tâche répétitive ?
 
 Nous sommes maintenant isolés du réseau mainnet officiel.
 
-#### Q12 : Comment s'appelle le premier block à la chaine ?
+#### Q10 : Comment s'appelle le premier block à la chaine ?
 
-#### Q13 : Quelle fonction sert à le calculer ?
+#### Q11 : Quelle fonction sert à le calculer ?
 
-#### Q14 : Que représentent les parametres de la fonction ?
+#### Q12 : Que représentent les parametres de la fonction ?
 
-#### Q15 : Que signifie nonce ?
+#### Q13 : Que signifie nonce ?
 
 Modifier certaines valeurs et relancer.
 
-#### Q16 : Que se passe t'il ? Pourquoi ?
+#### Q14 : Que se passe t'il ? Pourquoi ?
 
 Corrigez la ligne et relancer.
 
-#### Q17 : Que se passe t'il ? Pourquoi ?
+#### Q15 : Que se passe t'il ? Pourquoi ?
 
 Il faut donc trouver un hash acceptable. Il va donc falloir tester plusieurs blocks en changeant le nonce, jusqu'à trouve un hash valide. C'est exactement ce qu'un mineur réalise comme fonction.
 
@@ -84,18 +83,18 @@ Et remplacer la creation du premier block de la chaine par :
       printf("Block Testé %d -> %s\n", tmp, genesis.GetHash().ToString().c_str());
     }
 
-#### Q18 : Que fait ce code ?
+#### Q16 : Que fait ce code ?
 
 Relancer.
 
-#### Q19 : Que se passe-t-il ?
+#### Q17 : Que se passe-t-il ?
 
 Afin d'avoir une réponse plus rapide, il faut agir sur deux paramètres. La difficulté minimale que le système peut rencontrer et la difficulté minimale du genesis block.
 
 Modifiez le code pour indiquer une difficulté minimale de :
 '0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
 
-#### Q20 : Quelle était la difficulté précédente ?
+#### Q18 : Quelle était la difficulté précédente ?
 
 Maintenant il faut baisser la difficulté pour le choix du block génésis.
 
@@ -105,7 +104,7 @@ En lisant cette entrée de stackexchange, http://bitcoin.stackexchange.com/quest
 0x00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff == 0x1d00ffff
 2 - Corrigez le script de recherche du block genesis pour avoir une diffulté inférieure à la difficulté minimale.
 
-#### Q21 : Que ce passe t'il ?
+#### Q19 : Que ce passe t'il ?
 
 Si vous voulez testez vos compétences techniques, n'allez pas à la question suivante, mais essayez de tracer le code pour comprendre pourquoi le minage ne s'exécute pas.
 SINON VOUS POUVEZ LIRE LA SUITE
