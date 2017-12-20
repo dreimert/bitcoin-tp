@@ -1,5 +1,7 @@
 # TP3 - Minage Bitcoin
 
+Version originale de ce TP : https://sfrenot.jumplyn.com/tp3-minage-bitcoin/.
+
 L'objectif du TP est de modifier le code source de bitcoin pour y créer sa propre *blockchain* et voir le minage en fonctionnement.
 
 ## Etapes préliminaires
