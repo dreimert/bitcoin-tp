@@ -19,8 +19,7 @@
 
 ## Vous êtes dans le conteneur
 
-Du coup, vous pouvez suivre la première version de ce TP jusqu'à la question 17 : https://sfrenot.jumplyn.com/tp3-minage-bitcoin/
-
+Du coup, vous pouvez passer au TP lui-même : [TP](./TP3.md)
 ## Docker le retour
 
 ### Créer une image à partir d'un container
