@@ -27,10 +27,10 @@ Ouvrez et parcourez rapidement ce fichier.
 
 Le code suivant permet d'écrire dans la console en c++ :
 
-    #include <iostream>
+    #include <stdio.h>
 
     /* Dans la fonction Params */
-    std::cout << "Mon super commentaire à afficher";
+    printf("###### Je suis là !!!!! ########\n");
 
 #### Q5 : Ajouter une trace quelconque dans le fichier pour vérifier que vos modifications sont bien prises en compte. Recompilez et exectuez le demon.
 
