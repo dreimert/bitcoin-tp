@@ -26,6 +26,8 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /root/
 
+COPY .vimrc /root/.vimrc
+
 RUN git clone https://github.com/bitcoin/bitcoin
 
 WORKDIR /root/bitcoin
