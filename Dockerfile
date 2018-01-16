@@ -30,6 +30,8 @@ COPY .vimrc /root/.vimrc
 
 RUN git clone https://github.com/bitcoin/bitcoin
 
+VOLUME /root/bitcoin
+
 WORKDIR /root/bitcoin
 
 #RUN git checkout 0.12
